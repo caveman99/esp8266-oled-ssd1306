@@ -964,6 +964,10 @@ void OLEDDisplay::setGeometry(OLEDDISPLAY_GEOMETRY g, uint16_t width, uint16_t h
   this->geometry = g;
 
   switch (g) {
+    case GEOMETRY_128_128:
+      this->displayWidth = 128;
+      this->displayHeight = 128;
+      break;
     case GEOMETRY_128_64:
       this->displayWidth = 128;
       this->displayHeight = 64;
